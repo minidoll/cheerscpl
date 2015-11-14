@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title><![CDATA[Leon.C.Aien's Blog]]></title>
+  
+  <link href="/atom.xml" rel="self"/>
+  <link href="http://www.cheerscpl.com/"/>
+  <updated>2015-11-13T18:49:34.000Z</updated>
+  <id>http://www.cheerscpl.com/</id>
+  
+  <author>
+    <name><![CDATA[Leon.C.Aien]]></name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title><![CDATA[first]]></title>
+    <link href="http://www.cheerscpl.com/2015/11/14/first/"/>
+    <id>http://www.cheerscpl.com/2015/11/14/first/</id>
+    <published>2015-11-13T17:32:40.000Z</published>
+    <updated>2015-11-13T18:49:34.000Z</updated>
+    <content type="html"><![CDATA[<p></p><h1>权当测试</h1><p></p>
+<p>第一篇文章</p>
+
+
+]]></content>
+    <summary type="html">
+    <![CDATA[<p></p><h1>权当测试</h1><p></p>
+<p>第一篇文章</p>
+
+
+]]>
+    </summary>
+    
+      <category term="杂谈" scheme="http://www.cheerscpl.com/tags/%E6%9D%82%E8%B0%88/"/>
+    
+  </entry>
+  
+</feed>
