@@ -4,7 +4,7 @@
   
   <link href="/atom.xml" rel="self"/>
   <link href="http://www.cheerscpl.com/"/>
-  <updated>2015-12-17T13:44:38.000Z</updated>
+  <updated>2016-08-15T04:05:45.341Z</updated>
   <id>http://www.cheerscpl.com/</id>
   
   <author>
@@ -15,11 +15,36 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title><![CDATA[关于最佳实践的一些整理]]></title>
+    <link href="http://www.cheerscpl.com/2016/08/15/%E5%85%B3%E4%BA%8E%E6%9C%80%E4%BD%B3%E5%AE%9E%E8%B7%B5%E7%9A%84%E4%B8%80%E4%BA%9B%E6%95%B4%E7%90%86/"/>
+    <id>http://www.cheerscpl.com/2016/08/15/关于最佳实践的一些整理/</id>
+    <published>2016-08-15T02:54:44.000Z</published>
+    <updated>2016-08-15T04:05:45.341Z</updated>
+    <content type="html"><![CDATA[<p>好久没更新日志了，因一些原因还是倦怠下来了。这篇日志呢，主要是记录一下最近学习的一些心得体会及一些零碎知识的整理。</p>
+<p><strong>知乎</strong>上有一篇关于如何创建笔记系统的讨论<a href="https://www.zhihu.com/question/23427617" target="_blank" rel="external">链接</a>里面的论述非常精彩，具有很强的参考性。不过归根结底还是在于对知识的一个消化过程，<em>关键是形成认知</em>。前段时间一直比较忙，最近稍稍空闲下来，打算对之前接触到或者已经运用的一些零零碎碎的知识做一个整理、总结，以完善知识体系。</p>
+<p>在软件开发领域，一直就有关于<strong>最佳实践</strong>的论述。计算机技术跟一些传统的科学学科不同，其中有许许多多令人惊叹的发明创造。目前，很多领域造轮子现象处于一个井喷的状况。不同的技术在出现之初，都是有其适用域的，在深入了解了某种技术之后，对其优势以及不足之处有了一个比较全面的认知之后。自然而然地会规避一些不好的地方，利用其中的精华部分，充分发挥其优势。<strong>最佳实践</strong>大致就是这个意思。</p>
+<p>关于学习呢，可能每个人都有自己方法。记得上高中的时候，有位化学老师说过：<em>学东西，无非就两种方式：要么从原理出发，理解事物的本质；要么通过实践从量变到质变。</em>这么些年过去了，能记得的化学公式已经没几个了，但是这句话一直记忆犹新，算是对得起老师的一番教导吧。其实软件技术也是如此，刚开始入门的时候，可能都只是会简单的运用就行了，但是如果仅止步于此的话学到的就只能是一些皮毛了，这里得感谢刚工作时，带我的几位师傅，让我少走了不少弯路。</p>
+<p>在软件领域有很多关于最佳实践的论著，这些都是前辈们不断的实践总结出来的。在运用的时候，最直接的方式就是按照最佳实践来。等慢慢的对其理解到了一定层次之后，就自然能灵活运用了。后面会抽时间陆陆续续的将一些常用的最佳实践结合自己的理解，慢慢整理出来。这篇日志的意义便在于此。</p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>好久没更新日志了，因一些原因还是倦怠下来了。这篇日志呢，主要是记录一下最近学习的一些心得体会及一些零碎知识的整理。</p>
+<p><strong>知乎</strong>上有一篇关于如何创建笔记系统的讨论<a href="https://www.zhihu.com/quest]]>
+    </summary>
+    
+      <category term="最佳实践" scheme="http://www.cheerscpl.com/tags/%E6%9C%80%E4%BD%B3%E5%AE%9E%E8%B7%B5/"/>
+    
+      <category term="知识整理" scheme="http://www.cheerscpl.com/tags/%E7%9F%A5%E8%AF%86%E6%95%B4%E7%90%86/"/>
+    
+      <category term="笔记" scheme="http://www.cheerscpl.com/tags/%E7%AC%94%E8%AE%B0/"/>
+    
+  </entry>
+  
+  <entry>
     <title><![CDATA[题记]]></title>
     <link href="http://www.cheerscpl.com/2015/11/14/%E9%A2%98%E8%AE%B0/"/>
     <id>http://www.cheerscpl.com/2015/11/14/题记/</id>
     <published>2015-11-14T09:53:15.000Z</published>
-    <updated>2015-12-17T13:44:38.000Z</updated>
+    <updated>2015-12-17T13:44:38.028Z</updated>
     <content type="html"><![CDATA[<p>这篇文章名为题记，其实作为开篇词要更为恰当一些吧。经过了好几天的努力，一路排错解决问题至此总算是把整个博客搭建起来了。尽管需要优化的地方不少，但总的来说是件值得高兴的事。本来打算就这样了，想想为了以示郑重，还是决定写点什么的好。</p>
 <p>很早的时候就有尝试写一些博文，但一是觉得写的东西太过简单没太大价值，二是嫌麻烦就一直给耽搁了，慢慢的也就不了了之了。前段时间买了一本刘未鹏著的《暗时间》，里面的很多观点都让人深受启发，而书中很多素材均选自作者的个人博客，其中关于为什么要写博客，有一段很精彩的论述。<a href="http://mindhacks.cn/2009/02/15/why-you-should-start-blogging-now/" target="_blank" rel="external">附上链接</a><br>一个长期的价值博客，能够突破地域的限制让我们认识许多志同道合的朋友。书写能够帮助我们更好的思考，尤其是在读到一些书籍或者学一些新知识的时候，或多或少总会有一些心得感悟在里面的，如果弃之不顾着实是件很可惜的事情，下次在要拾起的时候可能就需要花上更大的代价了。在认真地去写一篇博文的时候，其实也是对一些知识观点进行归纳总结和消化的过程，而知识只有经过归纳推演之后才能真正的成为自己的东西。一篇好的博文，不仅能为他人提供价值，同时也能让自己的理解更进一步。不足之处，也能在与人交流中得到更正。</p>
 <p>目前网络上现有的博客平台非常多，不提新浪这类综合性平台，就拿技术类博客来说csdn、cnblog、51cto、开源中国等等也有不少。但是能坚持写下来或者博文质量很高的博主非常少。好多内容乏善可陈，仅仅只是一次问题解决的记录或者一些具体问题的处理方式，其实如果能在深入一点就能发现问题的本质。更有甚者，一些极为特殊情况的处理方式或一些错误的论述被反复转载，极易误导他人……  </p>
@@ -42,7 +67,7 @@
     <link href="http://www.cheerscpl.com/2015/11/14/markdown%E8%AF%AD%E6%B3%95%E7%AE%80%E8%AE%B0/"/>
     <id>http://www.cheerscpl.com/2015/11/14/markdown语法简记/</id>
     <published>2015-11-14T09:26:57.000Z</published>
-    <updated>2015-11-14T09:26:57.000Z</updated>
+    <updated>2015-11-14T09:26:57.089Z</updated>
     <content type="html"><![CDATA[<p>Markdown是一种极简的『标记语言』，将文本转为HTML，被广泛应用于博客、CMS及说明文档的编写中。  </p>
 <p>Markdown的目标是为了实现<strong>易读易写</strong>。普通的文本格式没有样式，类似word这些文字处理软件则需要专门花时间去处理格式，Markdown的出现使得实现这两个目标变得简单而高效。只需要在编写文字的过程中加上一些语法标识就能轻松搞定。网上关于Markdown有许多高质量的教程，这里就不赘述，编写本文主要出于两个目的：</p>
 <ul>
@@ -114,7 +139,7 @@
 <p>也可以直接链接  </p>
 <pre><code>&lt;<span class="string">https:</span><span class="comment">//www.baidu.com&gt;</span>
 &lt;<span class="number">694537670</span><span class="annotation">@qq</span>.com&gt;
-</code></pre><p><a href="https://www.baidu.com" target="_blank" rel="external">https://www.baidu.com</a><br><a href="&#x6d;&#97;&#x69;&#x6c;&#116;&#x6f;&#58;&#x36;&#57;&#52;&#x35;&#x33;&#55;&#54;&#x37;&#48;&#64;&#x71;&#113;&#x2e;&#x63;&#111;&#x6d;">&#x36;&#57;&#52;&#x35;&#x33;&#55;&#54;&#x37;&#48;&#64;&#x71;&#113;&#x2e;&#x63;&#111;&#x6d;</a></p>
+</code></pre><p><a href="https://www.baidu.com" target="_blank" rel="external">https://www.baidu.com</a><br><a href="&#109;&#x61;&#105;&#108;&#x74;&#111;&#58;&#x36;&#x39;&#52;&#53;&#x33;&#x37;&#x36;&#55;&#48;&#64;&#113;&#113;&#x2e;&#x63;&#x6f;&#109;">&#x36;&#x39;&#52;&#53;&#x33;&#x37;&#x36;&#55;&#48;&#64;&#113;&#113;&#x2e;&#x63;&#x6f;&#109;</a></p>
 <h3 id="脚注">脚注</h3><pre><code>hello[^hello]
 [<span class="link_reference">^hello</span>]:<span class="link_url"> hi</span>
 </code></pre><p>hello<a href="hi">^hello</a></p>
