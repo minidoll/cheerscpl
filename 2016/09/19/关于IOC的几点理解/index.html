@@ -3,21 +3,18 @@
 <head>
   <meta charset="utf-8">
   
-  <title>题记 | Leon.C.Aien&#39;s Blog</title>
+  <title>关于IOC的几点理解 | Leon.C.Aien&#39;s Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="这篇文章名为题记，其实作为开篇词要更为恰当一些吧。经过了好几天的努力，一路排错解决问题至此总算是把整个博客搭建起来了。尽管需要优化的地方不少，但总的来说是件值得高兴的事。本来打算就这样了，想想为了以示郑重，还是决定写点什么的好。
-很早的时候就有尝试写一些博文，但一是觉得写的东西太过简单没太大价值，二是嫌麻烦就一直给耽搁了，慢慢的也就不了了之了。前段时间买了一本刘未鹏著的《暗时间》，里面的很多观点都">
+  <meta name="description" content="说起Spring,就必须提起ioc、di这两个概念。IOC(Inverse of Control)又名控制反转、DI(Dependency Injection)又名依赖注入。关于这两点网上的论述非常多，当然还有后面要说到的AOP。这里不做太过深入的名词解析，保持一个原则：力求简用单的方式将复杂的问题描述清楚。进入正题：ioc不是一种技术，而是一种设计思想，或者说是随着面向对象技术的普及而衍生出来的">
 <meta property="og:type" content="article">
-<meta property="og:title" content="题记">
-<meta property="og:url" content="http://www.cheerscpl.com/2015/11/14/题记/index.html">
+<meta property="og:title" content="关于IOC的几点理解">
+<meta property="og:url" content="http://www.cheerscpl.com/2016/09/19/关于IOC的几点理解/index.html">
 <meta property="og:site_name" content="Leon.C.Aien's Blog">
-<meta property="og:description" content="这篇文章名为题记，其实作为开篇词要更为恰当一些吧。经过了好几天的努力，一路排错解决问题至此总算是把整个博客搭建起来了。尽管需要优化的地方不少，但总的来说是件值得高兴的事。本来打算就这样了，想想为了以示郑重，还是决定写点什么的好。
-很早的时候就有尝试写一些博文，但一是觉得写的东西太过简单没太大价值，二是嫌麻烦就一直给耽搁了，慢慢的也就不了了之了。前段时间买了一本刘未鹏著的《暗时间》，里面的很多观点都">
-<meta property="og:updated_time" content="2015-12-17T13:44:38.028Z">
+<meta property="og:description" content="说起Spring,就必须提起ioc、di这两个概念。IOC(Inverse of Control)又名控制反转、DI(Dependency Injection)又名依赖注入。关于这两点网上的论述非常多，当然还有后面要说到的AOP。这里不做太过深入的名词解析，保持一个原则：力求简用单的方式将复杂的问题描述清楚。进入正题：ioc不是一种技术，而是一种设计思想，或者说是随着面向对象技术的普及而衍生出来的">
+<meta property="og:updated_time" content="2016-09-19T08:47:45.978Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="题记">
-<meta name="twitter:description" content="这篇文章名为题记，其实作为开篇词要更为恰当一些吧。经过了好几天的努力，一路排错解决问题至此总算是把整个博客搭建起来了。尽管需要优化的地方不少，但总的来说是件值得高兴的事。本来打算就这样了，想想为了以示郑重，还是决定写点什么的好。
-很早的时候就有尝试写一些博文，但一是觉得写的东西太过简单没太大价值，二是嫌麻烦就一直给耽搁了，慢慢的也就不了了之了。前段时间买了一本刘未鹏著的《暗时间》，里面的很多观点都">
+<meta name="twitter:title" content="关于IOC的几点理解">
+<meta name="twitter:description" content="说起Spring,就必须提起ioc、di这两个概念。IOC(Inverse of Control)又名控制反转、DI(Dependency Injection)又名依赖注入。关于这两点网上的论述非常多，当然还有后面要说到的AOP。这里不做太过深入的名词解析，保持一个原则：力求简用单的方式将复杂的问题描述清楚。进入正题：ioc不是一种技术，而是一种设计思想，或者说是随着面向对象技术的普及而衍生出来的">
   
     <link rel="alternative" href="/atom.xml" title="Leon.C.Aien&#39;s Blog" type="application/atom+xml">
   
@@ -165,11 +162,11 @@
 		</header>				
 	</div>
 </nav>
-      <div class="body-wrap"><article id="post-题记" class="article article-type-post" itemscope itemprop="blogPost">
+      <div class="body-wrap"><article id="post-关于IOC的几点理解" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
-      <a href="/2015/11/14/题记/" class="article-date">
-  	<time datetime="2015-11-14T09:53:15.000Z" itemprop="datePublished">2015-11-14</time>
+      <a href="/2016/09/19/关于IOC的几点理解/" class="article-date">
+  	<time datetime="2016-09-19T06:28:10.000Z" itemprop="datePublished">2016-09-19</time>
 </a>
     </div>
   
@@ -182,7 +179,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      题记
+      关于IOC的几点理解
     </h1>
   
 
@@ -191,7 +188,7 @@
       <div class="article-info article-info-post">
         
 	<div class="article-tag tagcloud">
-		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/杂谈/">杂谈</a></li></ul>
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/ioc/">ioc</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/spring/">spring</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/实现原理/">实现原理</a></li></ul>
 	</div>
 
         
@@ -202,13 +199,7 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>这篇文章名为题记，其实作为开篇词要更为恰当一些吧。经过了好几天的努力，一路排错解决问题至此总算是把整个博客搭建起来了。尽管需要优化的地方不少，但总的来说是件值得高兴的事。本来打算就这样了，想想为了以示郑重，还是决定写点什么的好。</p>
-<p>很早的时候就有尝试写一些博文，但一是觉得写的东西太过简单没太大价值，二是嫌麻烦就一直给耽搁了，慢慢的也就不了了之了。前段时间买了一本刘未鹏著的《暗时间》，里面的很多观点都让人深受启发，而书中很多素材均选自作者的个人博客，其中关于为什么要写博客，有一段很精彩的论述。<a href="http://mindhacks.cn/2009/02/15/why-you-should-start-blogging-now/" target="_blank" rel="external">附上链接</a><br>一个长期的价值博客，能够突破地域的限制让我们认识许多志同道合的朋友。书写能够帮助我们更好的思考，尤其是在读到一些书籍或者学一些新知识的时候，或多或少总会有一些心得感悟在里面的，如果弃之不顾着实是件很可惜的事情，下次在要拾起的时候可能就需要花上更大的代价了。在认真地去写一篇博文的时候，其实也是对一些知识观点进行归纳总结和消化的过程，而知识只有经过归纳推演之后才能真正的成为自己的东西。一篇好的博文，不仅能为他人提供价值，同时也能让自己的理解更进一步。不足之处，也能在与人交流中得到更正。</p>
-<p>目前网络上现有的博客平台非常多，不提新浪这类综合性平台，就拿技术类博客来说csdn、cnblog、51cto、开源中国等等也有不少。但是能坚持写下来或者博文质量很高的博主非常少。好多内容乏善可陈，仅仅只是一次问题解决的记录或者一些具体问题的处理方式，其实如果能在深入一点就能发现问题的本质。更有甚者，一些极为特殊情况的处理方式或一些错误的论述被反复转载，极易误导他人……  </p>
-<p>仔细想来，用最近出现频次较高的一个词来形容，其实是少了些仪式感，这也是我建立这个博客的原因之一。不同于其他的博客平台，自己搭建一个博客，除了写博客之外，与之相关方方面面都需要自己去完善。从运营的角度来看，更像是在经营。 </p>
-<p>而生活其实更需要仪式感，对一枚程序员而言，很多时候一台电脑一根网线或许就是整个世界。很长一段时候我也是这种状态，真正投入的时候，用废寝忘食来形容也毫不为过。宅的时候除了吃饭，可以好长时间都不出门，生活质量也变得越来越低。而当有一天你突然想走出这种状态的候，才会发现这需要多么大的勇气和决心。  </p>
-<p>这个博客除了一些技术上的总结与分享之外，在闲暇之余，像一些读书心得，或者某个阶段的人生感悟，我也会写在里面。同时，对我个人而言这也是一种督促，至少在闲下来的时候不会把时间浪费在一些无聊的事情上面。以这篇文章为起点，后面我会与它一同成长，我不知道自己能坚持到什么程度，但哪怕一周或两周写一篇，一直写到30岁。时常拿出来翻一翻，回顾一下每个阶段的点滴，我想一定会有收获的。那时候，我也许不写代码了，人也时常会有迷茫不清的时候，只是希望不管正经历着什么，但至少我一直是前进着的。我想这也是对待生活该有态度。</p>
-<p><strong>谨以此文，与君共勉!</strong>  </p>
+        <p>说起Spring,就必须提起ioc、di这两个概念。IOC(Inverse of Control)又名控制反转、DI(Dependency Injection)又名依赖注入。关于这两点网上的论述非常多，当然还有后面要说到的AOP。这里不做太过深入的名词解析，保持一个原则：力求简用单的方式将复杂的问题描述清楚。<br>进入正题：ioc不是一种技术，而是一种<strong>设计思想</strong>，或者说是随着面向对象技术的普及而衍生出来的一种<strong>编程模式</strong>。在面向对象编程中，创建对象最直接的方式是同<strong>new</strong>关键字来创建的。但是随着项目体积的扩大，全部采用这种方式的话将会是一场噩梦。即便是采用gof中提倡的创建模式，管理、维护也将变得异常困难，于是基于ioc这一思想的spring框架诞生了。<em>ioc思想的核心是将类的创建全部交由spring容易进行管理，在某个类中需要引用其他类时，通过di来注入到对应的类中去，实现了代码间真正的解耦。</em>这也是spring框架一直经久不衰的原因。而容器与ioc便是spring框架的核心。在这个基础之上像后续的aop等功能的出现，更是将现代软件架构中<strong>分层思想</strong>及一些常用的架构模式展现的淋漓尽致。<br>简言之：可以将Spring理解成一个类的加工厂，类的创建全部都由这个工厂进行管理，而工厂中又会分为一个个不同的生产车间(entity、dao、service、control..)，创建好的类会根据定义分配到不同的生产车间中去。aop则可以理解为这些个车间里的监管者一样，能够对整个过程进行干涉。而spring-web、spring-data、spring-jpa、spring-jdbc等模块，则是在这一基础上根据不同的领域进行的扩展。<br>如何实现一个ioc容器呢，黄大仙的博文<a href="https://my.oschina.net/huangyong/blog/158992" target="_blank" rel="external">IOC 实现原理</a>中有一个简易的实现，不到100行代码，感兴趣的可以研究下。与Spring不同是由一个helper类进行实现的，所有的类都是单例、静态的。而Spring中的处理更为复杂，完全是交由容器自行管理的，针对不同的应用场景，引入了许多机制。具体可以阅读Spring源码，这里就不再深入了。</p>
 
       
     </div>
@@ -218,18 +209,9 @@
     
 <nav id="article-nav">
   
-    <a href="/2016/08/15/关于最佳实践的一些整理/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption"><</strong>
-      <div class="article-nav-title">
-        
-          关于最佳实践的一些整理
-        
-      </div>
-    </a>
   
-  
-    <a href="/2015/11/14/markdown语法简记/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">markdown语法简记</div>
+    <a href="/2016/09/19/时间段分片算法/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">时间段分片算法</div>
       <strong class="article-nav-caption">></strong>
     </a>
   
@@ -258,7 +240,7 @@
 
 <div class="duoshuo">
 	<!-- 多说评论框 start -->
-	<div class="ds-thread" data-thread-key="题记" data-title="题记" data-url="http://www.cheerscpl.com/2015/11/14/题记/"></div>
+	<div class="ds-thread" data-thread-key="关于IOC的几点理解" data-title="关于IOC的几点理解" data-url="http://www.cheerscpl.com/2016/09/19/关于IOC的几点理解/"></div>
 	<!-- 多说评论框 end -->
 	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
 	<script type="text/javascript">
