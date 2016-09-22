@@ -3,18 +3,23 @@
 <head>
   <meta charset="utf-8">
   
-  <title>关于IOC的几点理解 | Leon.C.Aien&#39;s Blog</title>
+  <title>maven多模块、工程合并简记 | Leon.C.Aien&#39;s Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="说起Spring,就必须提起ioc、di这两个概念。IOC(Inverse of Control)又名控制反转、DI(Dependency Injection)又名依赖注入。关于这两点网上的论述非常多，当然还有后面要说到的AOP。这里不做太过深入的名词解析，保持一个原则：力求简用单的方式将复杂的问题描述清楚。进入正题：ioc不是一种技术，而是一种设计思想，或者说是随着面向对象技术的普及而衍生出来的">
+  <meta name="description" content="这篇文章是关于maven的，基本上已经是行业标准了。网上教程书籍非常多，基本的一些用法，这里就不列举了。这里主要是记录工程分模块以及合并部署时的一些关键信息。1.首先新建一个maven项目将pom文件中packaging改为pom。2.在该项目下建一个总的web模块，此时新建的模块会自动引入到上图的modules中。然后继续在总项目工程下建立其他模块(如果是要实现前后端分离的话，可分别建立不同ma">
 <meta property="og:type" content="article">
-<meta property="og:title" content="关于IOC的几点理解">
-<meta property="og:url" content="http://www.cheerscpl.com/2016/09/19/关于IOC的几点理解/index.html">
+<meta property="og:title" content="maven多模块、工程合并简记">
+<meta property="og:url" content="http://www.cheerscpl.com/2016/09/22/maven多模块、工程合并简记/index.html">
 <meta property="og:site_name" content="Leon.C.Aien's Blog">
-<meta property="og:description" content="说起Spring,就必须提起ioc、di这两个概念。IOC(Inverse of Control)又名控制反转、DI(Dependency Injection)又名依赖注入。关于这两点网上的论述非常多，当然还有后面要说到的AOP。这里不做太过深入的名词解析，保持一个原则：力求简用单的方式将复杂的问题描述清楚。进入正题：ioc不是一种技术，而是一种设计思想，或者说是随着面向对象技术的普及而衍生出来的">
-<meta property="og:updated_time" content="2016-09-19T08:47:45.978Z">
+<meta property="og:description" content="这篇文章是关于maven的，基本上已经是行业标准了。网上教程书籍非常多，基本的一些用法，这里就不列举了。这里主要是记录工程分模块以及合并部署时的一些关键信息。1.首先新建一个maven项目将pom文件中packaging改为pom。2.在该项目下建一个总的web模块，此时新建的模块会自动引入到上图的modules中。然后继续在总项目工程下建立其他模块(如果是要实现前后端分离的话，可分别建立不同ma">
+<meta property="og:image" content="http://www.cheerscpl.com/img/maven1.png">
+<meta property="og:image" content="http://www.cheerscpl.com/img/maven2.png">
+<meta property="og:image" content="http://www.cheerscpl.com/img/maven3.png">
+<meta property="og:image" content="http://www.cheerscpl.com/img/maven4.png">
+<meta property="og:image" content="http://www.cheerscpl.com/img/maven5.png">
+<meta property="og:updated_time" content="2016-09-22T08:14:12.013Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="关于IOC的几点理解">
-<meta name="twitter:description" content="说起Spring,就必须提起ioc、di这两个概念。IOC(Inverse of Control)又名控制反转、DI(Dependency Injection)又名依赖注入。关于这两点网上的论述非常多，当然还有后面要说到的AOP。这里不做太过深入的名词解析，保持一个原则：力求简用单的方式将复杂的问题描述清楚。进入正题：ioc不是一种技术，而是一种设计思想，或者说是随着面向对象技术的普及而衍生出来的">
+<meta name="twitter:title" content="maven多模块、工程合并简记">
+<meta name="twitter:description" content="这篇文章是关于maven的，基本上已经是行业标准了。网上教程书籍非常多，基本的一些用法，这里就不列举了。这里主要是记录工程分模块以及合并部署时的一些关键信息。1.首先新建一个maven项目将pom文件中packaging改为pom。2.在该项目下建一个总的web模块，此时新建的模块会自动引入到上图的modules中。然后继续在总项目工程下建立其他模块(如果是要实现前后端分离的话，可分别建立不同ma">
   
     <link rel="alternative" href="/atom.xml" title="Leon.C.Aien&#39;s Blog" type="application/atom+xml">
   
@@ -162,11 +167,11 @@
 		</header>				
 	</div>
 </nav>
-      <div class="body-wrap"><article id="post-关于IOC的几点理解" class="article article-type-post" itemscope itemprop="blogPost">
+      <div class="body-wrap"><article id="post-maven多模块、工程合并简记" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
-      <a href="/2016/09/19/关于IOC的几点理解/" class="article-date">
-  	<time datetime="2016-09-19T06:28:10.000Z" itemprop="datePublished">2016-09-19</time>
+      <a href="/2016/09/22/maven多模块、工程合并简记/" class="article-date">
+  	<time datetime="2016-09-22T07:09:14.000Z" itemprop="datePublished">2016-09-22</time>
 </a>
     </div>
   
@@ -179,7 +184,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      关于IOC的几点理解
+      maven多模块、工程合并简记
     </h1>
   
 
@@ -188,7 +193,7 @@
       <div class="article-info article-info-post">
         
 	<div class="article-tag tagcloud">
-		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/ioc/">ioc</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/spring/">spring</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/实现原理/">实现原理</a></li></ul>
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/maven/">maven</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/多模块/">多模块</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/过程记录/">过程记录</a></li></ul>
 	</div>
 
         
@@ -199,7 +204,7 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>说起Spring,就必须提起ioc、di这两个概念。IOC(Inverse of Control)又名控制反转、DI(Dependency Injection)又名依赖注入。关于这两点网上的论述非常多，当然还有后面要说到的AOP。这里不做太过深入的名词解析，保持一个原则：力求简用单的方式将复杂的问题描述清楚。<br>进入正题：ioc不是一种技术，而是一种<strong>设计思想</strong>，或者说是随着面向对象技术的普及而衍生出来的一种<strong>编程模式</strong>。在面向对象编程中，创建对象最直接的方式是同<strong>new</strong>关键字来创建的。但是随着项目体积的扩大，全部采用这种方式的话将会是一场噩梦。即便是采用gof中提倡的创建模式，管理、维护也将变得异常困难，于是基于ioc这一思想的spring框架诞生了。<em>ioc思想的核心是将类的创建全部交由spring容易进行管理，在某个类中需要引用其他类时，通过di来注入到对应的类中去，实现了代码间真正的解耦。</em>这也是spring框架一直经久不衰的原因。而容器与ioc便是spring框架的核心。在这个基础之上像后续的aop等功能的出现，更是将现代软件架构中<strong>分层思想</strong>及一些常用的架构模式展现的淋漓尽致。<br>简言之：可以将Spring理解成一个类的加工厂，类的创建全部都由这个工厂进行管理，而工厂中又会分为一个个不同的生产车间(entity、dao、service、control..)，创建好的类会根据定义分配到不同的生产车间中去。aop则可以理解为这些个车间里的监管者一样，能够对整个过程进行干涉。而spring-web、spring-data、spring-jpa、spring-jdbc等模块，则是在这一基础上根据不同的领域进行的扩展。<br>如何实现一个ioc容器呢，黄大仙的博文<a href="https://my.oschina.net/huangyong/blog/158992" target="_blank" rel="external">IOC 实现原理</a>中有一个简易的实现，不到100行代码，感兴趣的可以研究下。与Spring不同是由一个helper类进行实现的，所有的类都是单例、静态的。而Spring中的处理更为复杂，完全是交由容器自行管理的，针对不同的应用场景，引入了许多机制。具体可以阅读Spring源码，这里就不再深入了。</p>
+        <p>这篇文章是关于maven的，基本上已经是行业标准了。网上教程书籍非常多，基本的一些用法，这里就不列举了。这里主要是记录工程分模块以及合并部署时的一些关键信息。<br>1.首先新建一个maven项目<br><img src="http://www.cheerscpl.com/img/maven1.png" alt="项目pom"><br><em>将pom文件中packaging改为pom。</em><br>2.在该项目下建一个总的web模块，此时新建的模块会自动引入到上图的modules中。然后继续在总项目工程下建立其他模块(如果是要实现前后端分离的话，可分别建立不同maven项目和该模块对应的web模块)。将需要发布的web模块统一添加到总的web模块中即可<br><img src="http://www.cheerscpl.com/img/maven2.png" alt="总web项目pom"><br><em>在plugin里面加入需要添加的web模块，如有多个web模块就加入多少个overlay。</em><br><img src="http://www.cheerscpl.com/img/maven3.png" alt="总web项目pom"><br><em>在依赖中将需要合并进来的web模块的依赖加进来，type为war。</em><br>3.将总项目中的web模块打war包，普通模块打jar包。根据需要加入依赖关系即可，这样各个子web模块就能单独运行了。在需要部署的时候，直接对总项目进行打包，各个web模块就能自动合并到总的web项目中去了。<br><img src="http://www.cheerscpl.com/img/maven4.png" alt="普通模块pom"><br><em>普通模块中的packaging方式为jar</em><br><img src="http://www.cheerscpl.com/img/maven5.png" alt="普通web模块pom"><br><em>普通web模块中的packaging方式为war</em><br><strong>注：</strong>  <em>web项目在进行合并的时候，如果总web项目与普通web模块中相同路径下存在同名的文件，总web项目中的文件会覆盖掉普通web模块中的文件；如果普通web模块中相同路径下存在同名的文件，会按照合并时的顺序，前面的模块会覆盖掉后面的模块。</em></p>
 
       
     </div>
@@ -209,18 +214,9 @@
     
 <nav id="article-nav">
   
-    <a href="/2016/09/22/maven多模块、工程合并简记/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption"><</strong>
-      <div class="article-nav-title">
-        
-          maven多模块、工程合并简记
-        
-      </div>
-    </a>
   
-  
-    <a href="/2016/09/19/时间段分片算法/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">时间段分片算法</div>
+    <a href="/2016/09/19/关于IOC的几点理解/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">关于IOC的几点理解</div>
       <strong class="article-nav-caption">></strong>
     </a>
   
@@ -249,7 +245,7 @@
 
 <div class="duoshuo">
 	<!-- 多说评论框 start -->
-	<div class="ds-thread" data-thread-key="关于IOC的几点理解" data-title="关于IOC的几点理解" data-url="http://www.cheerscpl.com/2016/09/19/关于IOC的几点理解/"></div>
+	<div class="ds-thread" data-thread-key="maven多模块、工程合并简记" data-title="maven多模块、工程合并简记" data-url="http://www.cheerscpl.com/2016/09/22/maven多模块、工程合并简记/"></div>
 	<!-- 多说评论框 end -->
 	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
 	<script type="text/javascript">

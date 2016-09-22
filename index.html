@@ -103,7 +103,7 @@
 				
 				<section class="switch-part switch-part2">
 					<div class="widget tagcloud" id="js-tagcloud">
-						<a href="/tags/Markdown/" style="font-size: 10px;">Markdown</a> <a href="/tags/html/" style="font-size: 10px;">html</a> <a href="/tags/ioc/" style="font-size: 10px;">ioc</a> <a href="/tags/spring/" style="font-size: 10px;">spring</a> <a href="/tags/实现原理/" style="font-size: 10px;">实现原理</a> <a href="/tags/时间段/" style="font-size: 10px;">时间段</a> <a href="/tags/最佳实践/" style="font-size: 10px;">最佳实践</a> <a href="/tags/杂谈/" style="font-size: 10px;">杂谈</a> <a href="/tags/知识整理/" style="font-size: 10px;">知识整理</a> <a href="/tags/笔记/" style="font-size: 10px;">笔记</a> <a href="/tags/算法/" style="font-size: 10px;">算法</a>
+						<a href="/tags/Markdown/" style="font-size: 10px;">Markdown</a> <a href="/tags/html/" style="font-size: 10px;">html</a> <a href="/tags/ioc/" style="font-size: 10px;">ioc</a> <a href="/tags/maven/" style="font-size: 10px;">maven</a> <a href="/tags/spring/" style="font-size: 10px;">spring</a> <a href="/tags/多模块/" style="font-size: 10px;">多模块</a> <a href="/tags/实现原理/" style="font-size: 10px;">实现原理</a> <a href="/tags/时间段/" style="font-size: 10px;">时间段</a> <a href="/tags/最佳实践/" style="font-size: 10px;">最佳实践</a> <a href="/tags/杂谈/" style="font-size: 10px;">杂谈</a> <a href="/tags/知识整理/" style="font-size: 10px;">知识整理</a> <a href="/tags/笔记/" style="font-size: 10px;">笔记</a> <a href="/tags/算法/" style="font-size: 10px;">算法</a> <a href="/tags/过程记录/" style="font-size: 10px;">过程记录</a>
 					</div>
 				</section>
 				
@@ -162,6 +162,61 @@
 	</div>
 </nav>
       <div class="body-wrap">
+  
+    <article id="post-maven多模块、工程合并简记" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2016/09/22/maven多模块、工程合并简记/" class="article-date">
+  	<time datetime="2016-09-22T07:09:14.000Z" itemprop="datePublished">2016-09-22</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/09/22/maven多模块、工程合并简记/">maven多模块、工程合并简记</a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>这篇文章是关于maven的，基本上已经是行业标准了。网上教程书籍非常多，基本的一些用法，这里就不列举了。这里主要是记录工程分模块以及合并部署时的一些关键信息。<br>1.首先新建一个maven项目<br><img src="http://www.cheerscpl.com/img/maven1.png" alt="项目pom"><br><em>将pom文件中packaging改为pom。</em><br>2.在该项目下建一个总的web模块，此时新建的模块会自动引入到上图的modules中。然后继续在总项目工程下建立其他模块(如果是要实现前后端分离的话，可分别建立不同maven项目和该模块对应的web模块)。将需要发布的web模块统一添加到总的web模块中即可<br><img src="http://www.cheerscpl.com/img/maven2.png" alt="总web项目pom"><br><em>在plugin里面加入需要添加的web模块，如有多个web模块就加入多少个overlay。</em><br><img src="http://www.cheerscpl.com/img/maven3.png" alt="总web项目pom"><br><em>在依赖中将需要合并进来的web模块的依赖加进来，type为war。</em><br>3.将总项目中的web模块打war包，普通模块打jar包。根据需要加入依赖关系即可，这样各个子web模块就能单独运行了。在需要部署的时候，直接对总项目进行打包，各个web模块就能自动合并到总的web项目中去了。<br><img src="http://www.cheerscpl.com/img/maven4.png" alt="普通模块pom"><br><em>普通模块中的packaging方式为jar</em><br><img src="http://www.cheerscpl.com/img/maven5.png" alt="普通web模块pom"><br><em>普通web模块中的packaging方式为war</em><br><strong>注：</strong>  <em>web项目在进行合并的时候，如果总web项目与普通web模块中相同路径下存在同名的文件，总web项目中的文件会覆盖掉普通web模块中的文件；如果普通web模块中相同路径下存在同名的文件，会按照合并时的顺序，前面的模块会覆盖掉后面的模块。</em></p>
+
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/maven/">maven</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/多模块/">多模块</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/过程记录/">过程记录</a></li></ul>
+	</div>
+
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
   
     <article id="post-关于IOC的几点理解" class="article article-type-post" itemscope itemprop="blogPost">
   
@@ -498,7 +553,7 @@
 <p>也可以直接链接  </p>
 <pre><code>&lt;<span class="string">https:</span><span class="comment">//www.baidu.com&gt;</span>
 &lt;<span class="number">694537670</span><span class="annotation">@qq</span>.com&gt;
-</code></pre><p><a href="https://www.baidu.com" target="_blank" rel="external">https://www.baidu.com</a><br><a href="&#109;&#x61;&#105;&#x6c;&#116;&#111;&#x3a;&#54;&#x39;&#52;&#53;&#51;&#55;&#x36;&#55;&#x30;&#x40;&#x71;&#113;&#46;&#x63;&#111;&#109;">&#54;&#x39;&#52;&#53;&#51;&#55;&#x36;&#55;&#x30;&#x40;&#x71;&#113;&#46;&#x63;&#111;&#109;</a></p>
+</code></pre><p><a href="https://www.baidu.com" target="_blank" rel="external">https://www.baidu.com</a><br><a href="&#109;&#97;&#x69;&#x6c;&#116;&#111;&#x3a;&#x36;&#57;&#x34;&#53;&#x33;&#x37;&#x36;&#x37;&#x30;&#x40;&#113;&#113;&#x2e;&#x63;&#x6f;&#x6d;">&#x36;&#57;&#x34;&#53;&#x33;&#x37;&#x36;&#x37;&#x30;&#x40;&#113;&#113;&#x2e;&#x63;&#x6f;&#x6d;</a></p>
 <h3 id="脚注">脚注</h3><pre><code>hello[^hello]
 [<span class="link_reference">^hello</span>]:<span class="link_url"> hi</span>
 </code></pre><p>hello<a href="hi">^hello</a></p>
